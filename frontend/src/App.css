@@ -1,0 +1,55 @@
+/* dark-Mode  */
+
+
+.dark{
+    background-color: rgb(0, 0, 0) !important;
+    color: white !important;
+}
+
+.dark-white{
+    background-color: rgba(51, 51, 51, 0.308) !important;
+    color: rgb(179, 233, 250) !important;
+}
+
+.text-dark-yellow{
+    color: rgb(255, 245, 98) !important;
+}
+.text-dark-sky{
+    color: rgb(143, 213, 235) !important;
+}
+.text-dark-golden{
+    color: rgb(143, 213, 235) !important;
+}
+
+.text-dark-white{
+    color: rgb(255, 255, 255) !important;
+}
+
+.text-dark-blue{
+    color: rgb(178, 172, 255) !important;
+}
+.text-dark-grey{
+    color: rgb(202, 202, 202) !important;
+}
+
+
+.text-dark-green{
+    color: rgb(228, 245, 255) !important;
+}
+
+.text-dark-orange{
+    color: rgb(255, 200, 148) !important;
+}
+
+
+
+/* dark-buttton */
+
+.dark-btn{
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.dark-btn:hover{
+    background:rgba(97, 97, 97, 0.219) !important;
+}

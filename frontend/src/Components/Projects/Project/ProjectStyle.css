@@ -1,0 +1,130 @@
+.project-main{
+    background-color: rgb(255, 255, 255);
+    margin: 4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -8px rgb(34, 34, 34)
+}
+
+.inside-dark{
+    box-shadow: 0px 0px 20px -8px rgb(122, 122, 122);
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+
+.project-left{
+    width: 60%;
+    overflow: hidden;
+    padding: 0.8rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project-left>img{
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 0px rgb(78, 78, 78)
+}
+.project-left>video{
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 0px rgb(78, 78, 78)
+}
+
+
+
+
+.project-right{
+    padding: 0.5rem 1rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.project-right-1{
+    text-align: center;
+}
+
+.project-right-1>p{
+    margin-top: 1.2rem;
+}
+
+.project-right-2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.project-right-2>p{
+    
+    margin-left: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 19px;
+    font-size: 11px;
+    box-shadow: 0px 0px 4px 0px rgb(143, 143, 143)
+    
+}
+
+
+.project-right-3{
+    padding-top: 3rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+}
+
+.project-right-3>a{
+    margin: 1.5rem 0.5rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.project-right-3>a:hover{
+    background-color: rgb(102, 102, 102);
+    color: #f7fffe;
+}
+
+
+.live-btn{
+    cursor:not-allowed !important;
+}
+
+@media screen and (max-width:1000px){
+    .project-main{
+        /* padding:4rem 2rem; */
+        flex-direction: column;
+    }
+
+
+    .project-left{
+        padding: 2rem 0rem;
+        width: 90%;
+        
+    }
+
+    .project-right{
+        padding:2rem 1rem;
+        width: 80%;
+    }
+
+    .project-right-2>p{
+        margin: 0.8rem 0.5rem;
+    }
+    
+}

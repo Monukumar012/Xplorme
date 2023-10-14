@@ -1,0 +1,121 @@
+.skills-main{
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skills-bottom{
+    padding: 2rem 0rem;
+    margin: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.skills-main-top{
+    margin: 0 2rem;
+}
+
+.skills-main-top>h3{
+    color: rgb(94, 24, 24);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.skills-bottom-left{
+    padding-right: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.skills-bottom-right{
+
+    padding: 1rem 0rem;
+    padding-left: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border-left: 1px solid black; */
+
+}
+
+.skills-bottom-right-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.skills-bottom-right-1>h2{
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 35px;
+    font-feature-settings: "pcap";
+    font-variant: petite-caps;
+}
+
+
+
+
+
+.skills-bottom-right-2{
+    padding: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid black;
+
+}
+
+
+
+@media screen and (max-width:950px) {
+    .skills-main{
+        padding: 4rem 2rem;
+    }
+
+    
+
+    .skills-bottom{
+        padding-left: 0rem;
+        margin: 0rem;
+        flex-direction: column;
+    }
+
+    .skills-bottom-right{
+        
+        padding-top: 3rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills-bottom-right-2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3rem 0rem;
+        border-left: none;
+        border-top: 1px solid black;
+    }
+    .skills-bottom-left{
+        padding-right: 0rem;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+}

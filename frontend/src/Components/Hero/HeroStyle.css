@@ -1,0 +1,212 @@
+
+.hero-main{
+    /* background-color: rgba(250, 248, 248, 0.815); */
+    padding: 4rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hero-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.8rem 4rem;
+    justify-content: space-between;
+}
+
+.hero-top-left{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 22rem;
+    padding: 1rem;
+}
+
+.hero-top-left>h4{
+    font-variant: petite-caps;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+
+.hero-top-left>h1{
+    font-variant: petite-caps;
+    font-family: cursive;
+    padding-bottom: 0.8rem;
+    font-size: 3.2rem;
+}
+
+
+.hero-top-left>p{
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: rgb(73, 73, 73);
+    padding-bottom: 0.8rem;
+    font-family: cursive;
+}
+
+
+.hero-top-left-icon{
+    padding-top: 1rem;
+
+}
+
+.hero-top-left-icon>a{
+    padding: 0 0.3rem;
+    cursor: pointer;
+    color: black;
+}
+
+
+.hero-top-left-icon>a:hover{
+    color: rgb(57, 105, 105);
+}
+
+.fa-file{
+    padding-left: 0.2rem;
+    font-size: 28px;
+}
+
+
+.hero-top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero-top-right-profile{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(0, 68, 65);
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-top-right-profile>img{
+    width: 100%;
+    position: relative;
+    top: 19px;
+}
+
+.hero-bottom{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.8rem 4rem;
+}
+
+
+.hero-bottom-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 1rem;
+    width: 100%;
+}
+
+.hero-bottom-top>h3{
+    text-align: center;
+    font-size: 30px;
+    padding-right:1rem;
+}
+
+.hero-bottom-top-tech{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.hero-bottom-top-tech>p{
+    font-size: 35px;
+    padding-right: 8px;
+    padding-top: 6px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-dark>a{
+    color: white;
+}
+
+.hero-bottom-top-tech>p:hover{
+    transform: scale(1.3)
+}
+
+
+.react-logo{
+    color: #32c3ce;
+}
+
+.html-logo{
+    color: #be5024;
+}
+
+.nest-logo{
+    color: #8a1c1c;
+}
+
+.typescript-logo{
+    color: rgb(71, 114, 255);
+}
+.java-logo{
+    color: rgb(58, 102, 247);
+    
+}
+.javascript-logo{
+    color: #f1e537;
+}
+
+
+
+
+@media screen and (max-width:900px){
+
+    .hero-main{
+        padding: 4rem 0rem;
+    }
+    .hero-top{
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem 1rem;
+    }
+
+    .hero-top-left{
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-top-right{
+        min-width: none;
+    }
+    .hero-top-left{
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .hero-bottom{
+        width: auto;
+        padding: 1rem 1rem;
+    }
+
+
+    .hero-bottom-top{
+        margin: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}

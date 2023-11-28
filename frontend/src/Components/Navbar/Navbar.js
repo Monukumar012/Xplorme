@@ -5,21 +5,11 @@ import { ThemeContext } from "../../Context/ThemeContext";
 import { Link } from "react-router-dom";
 // import {Link} from 'react-router-dom'
 
-const Navbar = ({ setDark, userAuth, setUserAuth }) => {
-
-  if (userAuth) {
-    NavbarItems.splice(-3);
-    NavbarItems.push(
-        {
-            title: 'Dashboard',
-            url: '/dashboard'
-        },
-    );
-  }
+const Navbar = ({ setDark }) => {
 
   const dark = useContext(ThemeContext);
+  
   const [state, setState] = useState(false);
-
   const handleClick = () => {
     setState(!state);
   };

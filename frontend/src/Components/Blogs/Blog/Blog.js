@@ -1,7 +1,8 @@
 import './BlogStyle.css'
 import {useNavigate} from 'react-router-dom';
 
-const Blog = ({blog},{key}) => {
+const Blog = ({blog,key}) => {
+
 
   const navigate = useNavigate()
 

@@ -22,7 +22,7 @@ const Login = ({setUserAuth}) => {
         const data=res.data;
         if(data.success){
             setUserAuth(true);
-            navigate("/dashboard");
+            navigate("/admin/dashboard");
         }else{
             alert("You have not Autority to do this!")
         }

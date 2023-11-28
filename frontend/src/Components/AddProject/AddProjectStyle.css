@@ -1,0 +1,93 @@
+.create-project-main{
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.create-project-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.create-project-form>input{
+    margin: 1rem 0rem;
+    padding: 2px;
+    width: 60%;
+    height: 1.8rem;
+}
+
+
+.description{
+    margin: 1rem 0rem;
+    padding: 2px;
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.code{
+    margin: 1rem 0rem;
+    padding: 2px;
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 15rem;
+    max-height: 15rem;
+}
+
+.create-project-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+}
+
+.create-btn, .reset-btn{
+    margin: 1rem 2rem;
+    width: 60%;
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+    
+}
+
+
+.create-project-image{
+    margin: 1rem 0rem;
+    width: 60%;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.create-project-image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:850px) {
+    .create-project-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .create-project-form>input{
+        width: 100%;
+    }
+    
+    .description, .code{
+        min-width: 100%;
+        max-width: 100%;
+    
+    }
+
+    .create-btn, .reset-btn{
+        width: 100%;
+    }
+}

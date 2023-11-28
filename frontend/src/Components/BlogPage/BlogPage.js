@@ -7,10 +7,11 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import ReactMarkdown from 'react-markdown';
 import { ThemeContext } from '../../Context/ThemeContext';
 import Loader from '../Loader/Loader';
+import { useSelector } from 'react-redux';
 
 
 const BlogPage = () => {
-
+    const {blogs} = useSelector(state=>state.blogs);
     // light-dark
     const theme = useContext(ThemeContext);
 
@@ -18,11 +19,8 @@ const BlogPage = () => {
     // console.log(id);
     const [blog, setBlog] = useState(null);
     async function fetchBlog() {
-        const res = await axios.get(`http://localhost:8000/api/v1/blogs/${id.id}`);
-        const data = res.data;;
-        if (data.success) {
-            setBlog(data.blog);
-        }
+        const blog = blogs.find(blog => blog._id === id.id);
+        setBlog(blog);
     }
 
     useEffect(() => {

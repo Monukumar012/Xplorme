@@ -9,19 +9,28 @@ import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs.js';
 import BlogPage from './Components/BlogPage/BlogPage.js';
 import { ThemeContext } from './Context/ThemeContext';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Skills from './Components/Skiills/Skills';
 import CreateBlog from './Components/CreateBlog/CreateBlog.js';
 import Login from './Components/Login/Login.js';
 import AdminDashBoard from './Components/AdminDashBoard/AdminDashBoard.js';
+import AddProject from './Components/AddProject/AddProject';
+import { getBlogs } from './slices/blogsSlice.js';
+import { useDispatch } from 'react-redux';
+
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getBlogs());
+  },[dispatch])
+
   const [dark, setDark] = useState(true);
   const [userAuth, setUserAuth] = useState(false);
   return (
     <>
       <ThemeContext.Provider value={dark}>
-        <Navbar userAuth={userAuth} setUserAuth={setUserAuth} setDark={setDark} />
+        <Navbar setDark={setDark} />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/projects' element={<Projects />} />
@@ -31,9 +40,10 @@ function App() {
           <Route path='/login' element={<Login userAuth={userAuth} setUserAuth={setUserAuth} />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/blogs/:id' element={<BlogPage />} />
-          <Route path='/blogs/admin/create' element={<CreateBlog />} />
+          <Route path='/admin/dashboard/addblog' element={<CreateBlog />} />
+          <Route path='/admin/dashboard/addproject' element={<AddProject />} />
 
-          <Route path='/dashboard' element={userAuth ? <AdminDashBoard /> :<About />} />
+          <Route path='/admin/dashboard' element={userAuth ? <AdminDashBoard  setUserAuth={setUserAuth}/> :<About />} />
         </Routes>
         <Footer />
       </ThemeContext.Provider>
